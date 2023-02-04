@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <title>CrossFit | home</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contact-links">
+                <p class="email"> <a>CrossFit@gmail.com</a></p>
+                <p class="phone-number"><a>+251922972119</a></p>
+                <div class="social-media-icons">
+                    <a href="#"><img src="icons/facebook.png" alt=""></a>
+                    <a href="#"><img src="icons/instagram.png" alt=""></a>
+                    <a href="#"><img src="icons/twitter.png" alt=""></a>
+                    <a href="#"><img src="icons/telegram.png" alt=""></a>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>CrossFit Gym</h1>
+            <h2>Train hard, stay healthy.</h2>
+            <p>
+                CrossFit is a gym that specializes in functional fitness, 
+                or exercises that are designed to improve overall fitness and health. 
+                Cross Fitters work together as a team to complete challenging workouts 
+                that include elements of cardio, strength training, and gymnastics.
+            </p>
+            <div class="btn-container">
+                 <a href="#services"> <button>see more services </button></a>
+                <img src="icons/thin-arrow-bottom-icon.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="equipment">
+        <div class="container">
+            <h3>Equipments</h3>
+            <div class="equipment-gallery">
+                <div class="gallery-one">
+                    <div class="equipment-img equipment-1"></div>
+                    <h4>Bike</h4>
+                </div>
+                <div class="gallery-two">
+                    <div class="equipment-img equipment-2"></div>
+                    <h4>Resistance band</h4>
+                </div>
+            </div>
+
+            <div class="equipment-gallery">
+                <div class="gallery-one">
+                    <div class="equipment-img equipment-3"></div>
+                    <h4>Stair climber</h4>
+                </div>
+                <div class="gallery-two">
+                    <div class="equipment-img equipment-4"></div>
+                    <h4>Elliptical trainer</h4>
+                </div>
+            </div>
+
+            <div class="equipment-gallery">
+                <div class="gallery-one">
+                    <div class="equipment-img equipment-5"></div>
+                    <h4>Treadmill</h4>
+                </div>
+                <div class="gallery-two">
+                    <div class="equipment-img equipment-6"></div>
+                    <h4>Weight bench</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h3>Services</h3>
+            <div class="service-container">
+                <div class="service">
+                    <h4>Personal Training</h4>
+                    <img src="icons/weightlifting-icon.svg" alt="">
+                </div>
+    
+                <div class="service">
+                    <h4>nutrition counseling</h4>
+                    <img src="icons/nutrition-protein-icon.svg" alt="">
+                </div>
+    
+                <div class="service">
+                    <h4>equipment rentals</h4>
+                    <img class="dumbbell"src="icons/dumbbell-color-icon.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="registration">
+        <div class="container">
+            <h3>Registration</h3>
+            <form action="">
+                <div class="form-container">
+                    <div class="form-section-1">
+                        <input type="text" placeholder="First name">
+                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="Current weight">
+                        <input type="text" placeholder="Membership">
+                    </div>
+                    <div class="form-section-2">
+                        <input type="text" placeholder="Last name">
+                        <input type="text" placeholder="Phone number">
+                        <input type="text" placeholder="Height">
+                        <input type="text" placeholder="Goal weight">
+                    </div>
+                </div>
+                <input class="registar-btn" type="submit" value="REGISTAR">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="footer-link">
+                <p class="copyright">CrossFit @ 2023 | All right reserved</p>
+                <p><a href="#">Privacy policy</a></p>
+                <p><a href="#">Terms & Conditions</a></p>
+            </div>
+            
+            <div class="social-media-icons">
+                <a href="#"><img src="icons/facebook.png" alt=""></a>
+                <a href="#"><img src="icons/instagram.png" alt=""></a>
+                <a href="#"><img src="icons/twitter.png" alt=""></a>
+                <a href="#"><img src="icons/telegram.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+<script>
+    hamburger.addEventListener("click", ()=>{
+            hamburger.classList.toggle("active");
+            nav.classList.toggle("active");
+            container.classList.toggle("active");
+        });
+</script>
+</html>

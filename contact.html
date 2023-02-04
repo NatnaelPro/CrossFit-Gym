@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <title>CrossFit | contact</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contact-links">
+                <p class="email"> <a>CrossFit@gmail.com</a></p>
+                <p class="phone-number"><a>+251922972119</a></p>
+                <div class="social-media-icons">
+                    <a href="#"><img src="icons/facebook.png" alt=""></a>
+                    <a href="#"><img src="icons/instagram.png" alt=""></a>
+                    <a href="#"><img src="icons/twitter.png" alt=""></a>
+                    <a href="#"><img src="icons/telegram.png" alt=""></a>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <section id="contact-hero">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>
+                Hey there! Thanks for taking the time to check out our gym. 
+                Here at CrossFit Gym, we understand how important it is to prioritize 
+                your health and get in shape. With state-of-the-art equipment, expert personal 
+                trainers and motivating group classes, we are ready to help you every step of 
+                the way on your fitness journey. Contact us today to learn more about our services and 
+                get started towards a healthier lifestyle. 
+            </p>
+        </div>
+    </section>
+
+    <section id="contact-us-form">
+        <h3>Contact us</h3>
+        <form action="">
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="email">
+            <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+            <div class="btn-container">
+                <button class="contact-btn">send message</button>
+                <img src="icons/send-icon.svg" alt="">
+            </div>
+        </form>
+    </section>
+
+    <section id="faq">
+        <h3>F. A. Q</h3>
+        <div class="container">
+            <div class="faq-container">
+                <img class="faq" src="icons/plus-icon.svg" alt="">
+                <p class="less">How many calories do I need to burn a day to maintain my weight?</p>
+            </div>
+            <div>
+                <p class="more">A person who wants to maintain their current weight needs to burn approximately 1,500 calories a day.</p>
+            </div>
+
+            <div class="faq-container">
+                <img class="faq" src="icons/plus-icon.svg" alt="">
+                <p class="less">What are the best exercises for toning my body?</p>
+            </div>
+            <div>
+                <p class="more">There is no one-size-fits-all answer to this question, as the best exercises for toning your body will vary depending on your individual fitness level and goals. However, some popular exercises that can help tone your body include weightlifting, cardio training, Pilates, and yoga.</p>
+            </div>
+
+            <div class="faq-container">
+                <img class="faq" src="icons/plus-icon.svg" alt="">
+                <p class="less">How often should I go to the gym?</p>
+            </div>
+            <div>
+                <p class="more">There is no one answer to this question. It depends on your goals, fitness level, and schedule.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="footer-link">
+                <p class="copyright">CrossFit @ 2023 | All right reserved</p>
+                <p><a href="#">Privacy policy</a></p>
+                <p><a href="#">Terms & Conditions</a></p>
+            </div>
+            <div class="social-media-icons">
+                <a href="#"><img src="icons/facebook.png" alt=""></a>
+                <a href="#"><img src="icons/instagram.png" alt=""></a>
+                <a href="#"><img src="icons/twitter.png" alt=""></a>
+                <a href="#"><img src="icons/telegram.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+<script>
+    hamburger.addEventListener("click", ()=>{
+            hamburger.classList.toggle("active");
+            nav.classList.toggle("active");
+            contactHero.classList.toggle("active");
+        });
+
+    const faq = document.getElementsByClassName("faq");
+    Array.from(faq).forEach(function(faqs){
+        faqs.addEventListener('click', myfunction);
+    });
+
+    function myfunction(){
+        console.log(this.parentElement.nextElementSibling.children[0]);
+        if(this.src == "file:///C:/Users/Mr.Robot/Documents/Project/2023/CrossFit/Code/icons/plus-icon.svg"){
+            this.src="icons/minus-icon.svg";
+            //this.nextElementSibling.style.display = "none";
+            this.parentElement.nextElementSibling.children[0].style.display = "block";
+        }else {
+            this.src="icons/plus-icon.svg";
+            //this.nextElementSibling.style.display = "block";
+            this.parentElement.nextElementSibling.children[0].style.display = "none";
+        }
+            
+        
+    }
+</script>
+</html>
